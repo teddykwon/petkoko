@@ -16056,12 +16056,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 // #endregion Interface Imports
 var INITIAL_STATE = {
-  home: {
-    version: 1
-  },
-  image: {
-    url: ""
-  }
+  hashTags: [],
+  activeTag: "",
+  posts: []
 };
 var HomeReducer = function HomeReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : INITIAL_STATE;
