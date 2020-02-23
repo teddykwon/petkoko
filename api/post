@@ -1,0 +1,82 @@
+{
+    "code": "SUCCESS",
+    "message": "",
+    "success": true,
+    "content": [
+        {
+            "vendorType": "TIKTOK",
+            "tags": ["댕댕이", "강아지"],
+            "title":
+                "#포메라니안 #puppylove #doglife #doga #puppet #dost #반려동물 #고양이 #마이펫 #dogtricks #강아지 #puppy #puppydog #dogs #doggo #dog #멍멍이 #pugpuppy #아기강아지",
+            "content": {
+                "type": "VIDEO",
+                "thumbnailImageUrl":
+                    "https://p16-tiktokcdn-com.akamaized.net/obj/v0201/869f1e8b47839774413cd9e7b16194f2",
+                "link":
+                    "https://www.tiktok.com/@dogcastle1/video/6787215908818390274",
+                "originUrl": null,
+            },
+            "author": { "name": "DOGCASTLE", "profileImageUrl": null }
+        },
+        {
+            "vendorType": "TIKTOK",
+            "tags": ["댕댕이", "강아지"],
+            "title":
+                "#포메라니안 #puppylove #doglife #doga #puppet #dost #반려동물 #고양이 #마이펫 #dogtricks #강아지 #puppy #puppydog #dogs #doggo #dog #멍멍이 #pugpuppy #아기강아지",
+            "content": {
+                "type": "VIDEO",
+                "thumbnailImageUrl":
+                    "https://p16-tiktokcdn-com.akamaized.net/obj/v0201/869f1e8b47839774413cd9e7b16194f2",
+                "link":
+                    "https://www.tiktok.com/@dogcastle1/video/6787215908818390274",
+                "originUrl": null,
+            },
+            "author": { "name": "DOGCASTLE", "profileImageUrl": null }
+        },
+        {
+            "vendorType": "TIKTOK",
+            "tags": ["댕댕이", "강아지"],
+            "title":
+                "#포메라니안 #puppylove #doglife #doga #puppet #dost #반려동물 #고양이 #마이펫 #dogtricks #강아지 #puppy #puppydog #dogs #doggo #dog #멍멍이 #pugpuppy #아기강아지",
+            "content": {
+                "type": "VIDEO",
+                "thumbnailImageUrl":
+                    "https://p16-tiktokcdn-com.akamaized.net/obj/v0201/869f1e8b47839774413cd9e7b16194f2",
+                "link":
+                    "https://www.tiktok.com/@dogcastle1/video/6787215908818390274",
+                "originUrl": null,
+            },
+            "author": { "name": "DOGCASTLE", "profileImageUrl": null }
+        },
+        {
+            "vendorType": "TIKTOK",
+            "tags": ["댕댕이", "강아지"],
+            "title":
+                "#포메라니안 #puppylove #doglife #doga #puppet #dost #반려동물 #고양이 #마이펫 #dogtricks #강아지 #puppy #puppydog #dogs #doggo #dog #멍멍이 #pugpuppy #아기강아지",
+            "content": {
+                "type": "VIDEO",
+                "thumbnailImageUrl":
+                    "https://p16-tiktokcdn-com.akamaized.net/obj/v0201/869f1e8b47839774413cd9e7b16194f2",
+                "link":
+                    "https://www.tiktok.com/@dogcastle1/video/6787215908818390274",
+                "originUrl": null,
+            },
+            "author": { "name": "DOGCASTLE", "profileImageUrl": null }
+        },
+        {
+            "vendorType": "TIKTOK",
+            "tags": ["댕댕이", "강아지"],
+            "title":
+                "#포메라니안 #puppylove #doglife #doga #puppet #dost #반려동물 #고양이 #마이펫 #dogtricks #강아지 #puppy #puppydog #dogs #doggo #dog #멍멍이 #pugpuppy #아기강아지",
+            "content": {
+                "type": "VIDEO",
+                "thumbnailImageUrl":
+                    "https://p16-tiktokcdn-com.akamaized.net/obj/v0201/869f1e8b47839774413cd9e7b16194f2",
+                "link":
+                    "https://www.tiktok.com/@dogcastle1/video/6787215908818390274",
+                "originUrl": null,
+            },
+            "author": { "name": "DOGCASTLE", "profileImageUrl": null }
+        }
+    ]
+}

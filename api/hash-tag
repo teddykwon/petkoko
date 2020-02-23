@@ -1,0 +1,10 @@
+{
+    "code": "SUCCESS",
+    "message": "",
+    "success": true,
+    "content": [
+        "puppy",
+        "dog",
+        "animal"
+    ]
+}
