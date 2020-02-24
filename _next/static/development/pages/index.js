@@ -13050,6 +13050,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_Components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../src/Components */ "./src/Components/index.ts");
 
 
+var _jsxFileName = "/Users/dalbang/Develop/git/koko/front/pages/index/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2__["createElement"];
 // #region Global Imports
 
@@ -13072,14 +13073,19 @@ var Home = function Home(_ref) {
   var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useDispatch"])();
 
   var renderHashTagButtons = function renderHashTagButtons(activeTag) {
-    return ["puppy", "dog"].map(function (tag) {
+    return home.hashTags.map(function (tag) {
       return __jsx(_src_Components__WEBPACK_IMPORTED_MODULE_7__["HashTagButton"], {
         key: tag,
         tag: tag,
         isActive: activeTag === tag,
         onClick: function onClick() {
           return alert("");
-        }
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
       });
     });
   };
@@ -13157,12 +13163,77 @@ var Home = function Home(_ref) {
           originUrl: feed.content.originUrl,
           link: feed.content.link,
           type: feed.content.type
-        }
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
       });
     });
   };
 
-  return __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Container"], null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, __jsx("title", null, "PetKoKo")), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Top"], null), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Middle"], null, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleLeft"], null, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleLeftButtons"], null, renderHashTagButtons("puppy"))), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleRight"], null, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["TopText"], null, "#puppy"), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["FeedBoxs"], null, renderFeeds()))));
+  return __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Container"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  }, "PetKoKo")), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Top"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["Middle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleLeft"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: this
+  }, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleLeftButtons"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }, renderHashTagButtons(home.activeTag))), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["MiddleRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }, __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["TopText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: this
+  }, "#puppy"), __jsx(_src_Styled_Home__WEBPACK_IMPORTED_MODULE_5__["FeedBoxs"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: this
+  }, renderFeeds()))));
 };
 
 Home.getInitialProps = function _callee(ctx) {
@@ -13171,16 +13242,10 @@ Home.getInitialProps = function _callee(ctx) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(ctx.store.dispatch(_src_Actions__WEBPACK_IMPORTED_MODULE_6__["HomeActions"].GetApod({
-            params: {
-              hd: true
-            }
-          })));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(ctx.store.dispatch(_src_Actions__WEBPACK_IMPORTED_MODULE_6__["HomeActions"].GetHashTag({})));
 
         case 2:
-          return _context.abrupt("return", {
-            namespacesRequired: ["common"]
-          });
+          return _context.abrupt("return", {});
 
         case 3:
         case "end":
@@ -13190,8 +13255,7 @@ Home.getInitialProps = function _callee(ctx) {
   });
 };
 
-var Extended = Home;
-/* harmony default export */ __webpack_exports__["default"] = (Extended);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -13213,6 +13277,7 @@ __webpack_require__.r(__webpack_exports__);
 // #region Global Imports
 // #endregion Global Imports
 // #region Local Imports
+
 
  // #endregion Local Imports
 // #region Interface Imports
@@ -13254,6 +13319,38 @@ var HomeActions = {
             case 4:
             case "end":
               return _context.stop();
+          }
+        }
+      });
+    };
+  },
+  GetHashTag: function GetHashTag(payload) {
+    return function _callee2(dispatch) {
+      var results;
+      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(_Services__WEBPACK_IMPORTED_MODULE_2__["PostService"].GetHashTag({
+                params: {
+                  key: ""
+                }
+              }));
+
+            case 2:
+              results = _context2.sent;
+              dispatch({
+                payload: {
+                  hashTags: results.content,
+                  activeTag: results.content[0]
+                },
+                type: _Definitions__WEBPACK_IMPORTED_MODULE_1__["ActionConsts"].Home.SetReducer
+              });
+
+            case 4:
+            case "end":
+              return _context2.stop();
           }
         }
       });
@@ -13336,7 +13433,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Author__Container",
   componentId: "sc-19jiuf2-0"
-})(["margin:40px;position:absolute;display:flex;width:100%;bottom:0;"]);
+})(["margin:20px 16px;position:absolute;display:flex;width:100%;bottom:0;"]);
 var ProfileImageBoxWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Author__ProfileImageBoxWrapper",
   componentId: "sc-19jiuf2-1"
@@ -13870,11 +13967,75 @@ var PlanetaryService = {
 
 /***/ }),
 
+/***/ "./src/Services/API/Post/index.ts":
+/*!****************************************!*\
+  !*** ./src/Services/API/Post/index.ts ***!
+  \****************************************/
+/*! exports provided: PostService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostService", function() { return PostService; });
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../.. */ "./src/Services/index.ts");
+
+// #region Local Imports
+ // #endregion Local Imports
+// #region Interface Imports
+
+// #endregion Interface Imports
+var PostService = {
+  GetHashTag: function GetHashTag(payload) {
+    var response;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function GetHashTag$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(___WEBPACK_IMPORTED_MODULE_1__["Http"].Request("GET", "/hash-tag", payload.params));
+
+          case 2:
+            response = _context.sent;
+            return _context.abrupt("return", response);
+
+          case 4:
+          case "end":
+            return _context.stop();
+        }
+      }
+    });
+  },
+  GetPost: function GetPost(payload) {
+    var response;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function GetPost$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(___WEBPACK_IMPORTED_MODULE_1__["Http"].Request("GET", "/post", payload.params));
+
+          case 2:
+            response = _context2.sent;
+            return _context2.abrupt("return", response);
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    });
+  }
+};
+
+/***/ }),
+
 /***/ "./src/Services/index.ts":
 /*!*******************************!*\
   !*** ./src/Services/index.ts ***!
   \*******************************/
-/*! exports provided: Http, PlanetaryService */
+/*! exports provided: Http, PlanetaryService, PostService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13885,7 +14046,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _API_Planetary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./API/Planetary */ "./src/Services/API/Planetary/index.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PlanetaryService", function() { return _API_Planetary__WEBPACK_IMPORTED_MODULE_1__["PlanetaryService"]; });
 
+/* harmony import */ var _API_Post__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./API/Post */ "./src/Services/API/Post/index.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PostService", function() { return _API_Post__WEBPACK_IMPORTED_MODULE_2__["PostService"]; });
+
 // #region Local Imports
+
 
  // #endregion Local Imports
 
@@ -13895,7 +14060,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************!*\
   !*** ./src/Styled/Home.ts ***!
   \****************************/
-/*! exports provided: Container, Top, Middle, MiddleLeft, MiddleLeftButtons, MiddleRight, FeedBoxs, Apod, ApodButton, TopText */
+/*! exports provided: Container, Top, Middle, MiddleLeft, MiddleLeftButtons, MiddleRight, FeedBoxs, TopText */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13907,8 +14072,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiddleLeftButtons", function() { return MiddleLeftButtons; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiddleRight", function() { return MiddleRight; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedBoxs", function() { return FeedBoxs; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Apod", function() { return Apod; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApodButton", function() { return ApodButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopText", function() { return TopText; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 // #region Global Imports
@@ -13944,26 +14107,15 @@ var MiddleRight = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.
 var FeedBoxs = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Home__FeedBoxs",
   componentId: "sc-1vgusud-6"
-})(["display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));"]);
-var Apod = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "Home__Apod",
-  componentId: "sc-1vgusud-7"
-})(["display:flex;flex:1 1 100%;flex-direction:column;justify-content:space-around;align-items:center;"]);
-var ApodButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "Home__ApodButton",
-  componentId: "sc-1vgusud-8"
-})(["background:#f9da2e;border-radius:5px;padding:5px 10px;font-family:Arial;font-weight:700;font-size:25px;color:", ";letter-spacing:0;"], function (_ref2) {
-  var theme = _ref2.theme;
-  return theme.colors.primary;
-});
+})(["display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));"]);
 var TopText = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Home__TopText",
-  componentId: "sc-1vgusud-9"
+  componentId: "sc-1vgusud-7"
 })(["font-size:60px;margin-bottom:24px;"]);
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fdalbang%2FDevelop%2Fgit%2Fkoko%2Ffront%2Fpages%2Findex%2Findex.tsx ***!
   \**********************************************************************************************************************************************/
@@ -13986,5 +14138,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
