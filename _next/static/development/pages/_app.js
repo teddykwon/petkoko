@@ -16021,7 +16021,7 @@ function (_App) {
   }], [{
     key: "getInitialProps",
     value: function getInitialProps(_ref) {
-      var Component, ctx, pageProps, clientNeedsProps, isExport;
+      var Component, ctx, pageProps, clientNeedsProps, userAgent, isExport;
       return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function getInitialProps$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -16030,42 +16030,43 @@ function (_App) {
               pageProps = {}; // tell the client if the initial props still need to be fetched
 
               // check if we are inside a server-side export
-              isExport =  false && false;
+              userAgent = ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent;
+              isExport = !userAgent;
 
               if (!isExport) {
-                _context2.next = 7;
+                _context2.next = 8;
                 break;
               }
 
               // inside an export, the client needs props
               // iff .getInitialProps is defined
               clientNeedsProps = !!Component.getInitialProps;
-              _context2.next = 12;
+              _context2.next = 13;
               break;
 
-            case 7:
+            case 8:
               if (!Component.getInitialProps) {
-                _context2.next = 11;
+                _context2.next = 12;
                 break;
               }
 
-              _context2.next = 10;
+              _context2.next = 11;
               return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(Component.getInitialProps(ctx));
 
-            case 10:
+            case 11:
               pageProps = _context2.sent;
 
-            case 11:
+            case 12:
               // and tell the client that it got all the props it needed
               clientNeedsProps = false;
 
-            case 12:
+            case 13:
               return _context2.abrupt("return", {
                 pageProps: pageProps,
                 clientNeedsProps: clientNeedsProps
               });
 
-            case 13:
+            case 14:
             case "end":
               return _context2.stop();
           }
