@@ -16000,20 +16000,20 @@ function (_App) {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 69
         },
         __self: this
       }, __jsx(styled_components__WEBPACK_IMPORTED_MODULE_13__["ThemeProvider"], {
         theme: _src_Definitions_Styled__WEBPACK_IMPORTED_MODULE_15__["theme"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 70
         },
         __self: this
       }, gotInitialProps && __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 71
         },
         __self: this
       }))));
