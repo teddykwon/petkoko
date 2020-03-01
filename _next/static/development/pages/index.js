@@ -13337,13 +13337,12 @@ var Home = function Home(_ref) {
       lineNumber: 77
     },
     __self: this
-  }, "#" + home.activeTag), __jsx(react_magic_grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "#".concat(home.activeTag)), home.posts && home.posts.length > 0 && __jsx(react_magic_grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
     items: home.posts.length,
     gutter: 16,
-    maxColumns: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 79
     },
     __self: this
   }, renderFeeds()))));
