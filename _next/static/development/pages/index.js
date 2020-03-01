@@ -14106,7 +14106,7 @@ var MiddleRight = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.
 var FeedBoxs = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Home__FeedBoxs",
   componentId: "sc-1vgusud-6"
-})(["display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));"]);
+})(["display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(266px,1fr));"]);
 var TopText = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Home__TopText",
   componentId: "sc-1vgusud-7"
