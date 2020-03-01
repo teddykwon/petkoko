@@ -16214,7 +16214,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var INITIAL_STATE = {
   hashTags: [],
   activeTag: "",
-  posts: []
+  posts: [],
+  videoUrl: "",
+  activeVideo: false
 };
 var HomeReducer = function HomeReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : INITIAL_STATE;
