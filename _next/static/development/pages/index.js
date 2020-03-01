@@ -14011,15 +14011,14 @@ var PostService = {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            console.log(payload.params);
-            _context2.next = 3;
+            _context2.next = 2;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(___WEBPACK_IMPORTED_MODULE_1__["Http"].Request("GET", "/post", payload.params));
 
-          case 3:
+          case 2:
             response = _context2.sent;
             return _context2.abrupt("return", response);
 
-          case 5:
+          case 4:
           case "end":
             return _context2.stop();
         }
