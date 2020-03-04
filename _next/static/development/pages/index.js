@@ -69625,6 +69625,9 @@ var FeedBox = function FeedBox(props) {
   }, __jsx(BackgroundImage, {
     src: content.thumbnailUrl,
     alt: props.title,
+    onLoad: function onLoad() {
+      return window.dispatchEvent(new Event("resize"));
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -69637,7 +69640,7 @@ var FeedBox = function FeedBox(props) {
     profileImgUrl: author.profileImgUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 39
     },
     __self: this
   }));
