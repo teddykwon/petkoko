@@ -5118,7 +5118,7 @@ module.exports = function (encodedURI) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var topLevel = typeof global !== 'undefined' ? global :
     typeof window !== 'undefined' ? window : {}
-var minDoc = __webpack_require__(/*! min-document */ 5);
+var minDoc = __webpack_require__(/*! min-document */ 4);
 
 var doccy;
 
@@ -69257,6 +69257,7 @@ var Home = function Home(_ref) {
   }, "#".concat(home.activeTag)), home.posts && home.posts.length > 0 && __jsx(react_magic_grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
     items: home.posts.length,
     gutter: 16,
+    "static": true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 85
@@ -69266,7 +69267,7 @@ var Home = function Home(_ref) {
     videoUrl: home.videoUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: this
   }));
@@ -69606,7 +69607,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "FeedBox__Container",
   componentId: "sc-5vbvoc-0"
-})(["position:relative;cursor:pointer;width:calc(25% - 24px);@media (max-width:1440px){width:calc(33% - 24px);}@media (max-width:768px){width:calc(50% - 24px);}"]);
+})(["position:relative;cursor:pointer;width:calc(25% - 24px);@media (max-width:1440px){width:calc(33% - 24px);}@media (max-width:768px){width:calc(50% - 24px);}@media (max-width:600px){width:100%;}"]);
 var BackgroundImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
   displayName: "FeedBox__BackgroundImage",
   componentId: "sc-5vbvoc-1"
@@ -69618,7 +69619,7 @@ var FeedBox = function FeedBox(props) {
     onClick: props.onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 33
     },
     __self: this
   }, __jsx(BackgroundImage, {
@@ -69626,7 +69627,7 @@ var FeedBox = function FeedBox(props) {
     alt: props.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 34
     },
     __self: this
   }), __jsx(_Author__WEBPACK_IMPORTED_MODULE_2__["Author"], {
@@ -69636,7 +69637,7 @@ var FeedBox = function FeedBox(props) {
     profileImgUrl: author.profileImgUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }));
@@ -69819,7 +69820,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].video.withConfig({
   displayName: "Video__Container",
   componentId: "w766rt-0"
-})(["position:absolute;bottom:50px;right:50px;width:240px;height:300px;"]);
+})(["position:fixed;bottom:50px;right:50px;width:240px;height:300px;"]);
 var Video = function Video(props) {
   var videoRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
 
@@ -69874,26 +69875,26 @@ var Video = function Video(props) {
     className: "video-js",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, __jsx("div", {
     className: "c-player__controls",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, __jsx("button", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }, "Play"), __jsx("button", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, "Pause"))));
@@ -70234,7 +70235,7 @@ var TopText = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.with
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fdalbang%2FDevelop%2Fgit%2Fkoko%2Ffront%2Fpages%2Findex%2Findex.tsx ***!
   \**********************************************************************************************************************************************/
@@ -70246,7 +70247,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!******************************!*\
   !*** min-document (ignored) ***!
   \******************************/
@@ -70268,5 +70269,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
